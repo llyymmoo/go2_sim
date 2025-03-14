@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<robot name="combined_robot" xmlns:xacro="http://ros.org/wiki/xacro">
+  
+  <!-- Include the two robots -->
+  <xacro:include filename="$(find go2_description)/xacro/robot.xacro"/>
+  <xacro:include filename="$(find realsense_gazebo_plugin)/urdf/rs200_simulation.xacro"/>
+
+  <!-- Define the fixed joint to link the robots rigidly -->
+  <joint name="fixed_joint_between_robots" type="fixed">
+    <parent link="base"/>
+    <child link="rs200_camera"/>
+    <origin xyz="1 1 1" rpy="0 0 0"/>
+  </joint>
+
+</robot>
