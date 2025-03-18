@@ -23,19 +23,18 @@
         </visual>
         <collision>
             <geometry>
-                <box size="0.0078 0.130 0.0192"/>
+                <box size="0.001 0.001 0.001"/>
             </geometry>
         </collision>
         <inertial>
-            <!-- <mass value="0.0615752"/> -->
-            <mass value="0.00000001"/>
+            <mass value="0.0001"/>
             <origin rpy="0 0 0" xyz="0 0 0"/>
-            <inertia ixx="9.108e-05"
+            <inertia ixx="0.00001"
                      ixy="0"
                      ixz="0"
-                     iyy="2.51e-06"
+                     iyy="0.00001"
                      iyz="0"
-                     izz="8.931e-05"
+                     izz="0.00001"
             />
         </inertial>
     </link>
@@ -102,8 +101,8 @@
         <fdir1>0 0 0</fdir1>
         <!--<slip1>0</slip1>
         <slip2>0</slip2>-->
-        <kp>1e+13</kp>
-        <kd>1</kd>
+        <!-- <kp>1e+13</kp>
+        <kd>1</kd> -->
         <!--<max_vel>0.01</max_vel>
         <min_depth>0</min_depth>-->
 

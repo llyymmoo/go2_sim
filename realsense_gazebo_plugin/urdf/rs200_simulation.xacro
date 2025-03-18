@@ -11,6 +11,6 @@
     <!-- Create camera instance -->
     <!-- <xacro:realsense-rs200 prefix="" parent="world"> -->
     <xacro:realsense-rs200 prefix="">
-        <origin xyz="0 0 1.0" rpy="0 0 0" />   
+        <origin xyz="0 0 0" rpy="0 0 0" />   
     </xacro:realsense-rs200>
 </robot>
