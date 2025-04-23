@@ -112,7 +112,7 @@
             <horizontal_fov>1.047</horizontal_fov>
             <image>
                 <width>640</width>
-                <height>480</height>
+                <height>360</height>
                 <format>RGB_INT8</format>
             </image>
             <clip>
@@ -122,12 +122,13 @@
             <noise>
                 <type>gaussian</type>
                 <mean>0.0</mean>
-                <stddev>0.007</stddev>
+                <!-- <stddev>0.007</stddev> -->
+                <stddev>0.0</stddev>
             </noise>
             </camera>
             <always_on>1</always_on>
-            <update_rate>60</update_rate>
-            <visualize>1</visualize>
+            <update_rate>30</update_rate>
+            <visualize>0</visualize>
         </sensor>
         <sensor name="${prefix}ired1" type="camera">
             <pose frame="">0 -0.06 0.004 0 0 0</pose>
@@ -135,7 +136,7 @@
             <horizontal_fov>1.047</horizontal_fov>
             <image>
                 <width>640</width>
-                <height>480</height>
+                <height>360</height>
                 <format>L_INT8</format>
             </image>
             <clip>
@@ -145,11 +146,12 @@
             <noise>
                 <type>gaussian</type>
                 <mean>0.0</mean>
-                <stddev>0.05</stddev>
+                <!-- <stddev>0.05</stddev> -->
+                <stddev>0.0</stddev>
             </noise>
             </camera>
-            <always_on>1</always_on>
-            <update_rate>60</update_rate>
+            <always_on>0</always_on>
+            <update_rate>30</update_rate>
             <visualize>0</visualize>
         </sensor>
         <sensor name="${prefix}ired2" type="camera">
@@ -158,7 +160,7 @@
             <horizontal_fov>1.047</horizontal_fov>
             <image>
                 <width>640</width>
-                <height>480</height>
+                <height>360</height>
                 <format>L_INT8</format>
             </image>
             <clip>
@@ -168,11 +170,12 @@
             <noise>
                 <type>gaussian</type>
                 <mean>0.0</mean>
-                <stddev>0.05</stddev>
+                <!-- <stddev>0.05</stddev> -->
+                <stddev>0.0</stddev>
             </noise>
             </camera>
-            <always_on>1</always_on>
-            <update_rate>60</update_rate>
+            <always_on>0</always_on>
+            <update_rate>30</update_rate>
             <visualize>0</visualize>
         </sensor>
         <sensor name="${prefix}depth" type="depth">
@@ -181,7 +184,7 @@
             <horizontal_fov>1.047</horizontal_fov>
             <image>
                     <width>640</width>
-                    <height>480</height>
+                    <height>360</height>
             </image>
             <clip>
                     <near>0.1</near>
@@ -190,11 +193,12 @@
             <noise>
                     <type>gaussian</type>
                     <mean>0.0</mean>
-                    <stddev>0.100</stddev>
+                    <!-- <stddev>0.100</stddev> -->
+                    <stddev>0.0</stddev>
             </noise>
             </camera>
             <always_on>1</always_on>
-            <update_rate>60</update_rate>
+            <update_rate>30</update_rate>
             <visualize>0</visualize>
         </sensor>
     </gazebo>
